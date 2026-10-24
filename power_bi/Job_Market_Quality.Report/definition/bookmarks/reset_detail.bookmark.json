@@ -1,0 +1,262 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Reset Job detail",
+  "name": "reset_detail",
+  "options": {
+    "suppressActiveSection": true,
+    "suppressDisplay": true
+  },
+  "explorationState": {
+    "version": "1.0",
+    "activeSection": "detail",
+    "sections": {
+      "detail": {
+        "visualContainers": {
+          "detail_brand": {
+            "singleVisual": {}
+          },
+          "detail_brand_sub": {
+            "singleVisual": {}
+          },
+          "detail_title": {
+            "singleVisual": {}
+          },
+          "detail_period": {
+            "singleVisual": {}
+          },
+          "detail_nav_overview": {
+            "singleVisual": {}
+          },
+          "detail_nav_pay": {
+            "singleVisual": {}
+          },
+          "detail_nav_entry": {
+            "singleVisual": {}
+          },
+          "detail_nav_repeats": {
+            "singleVisual": {}
+          },
+          "detail_nav_detail": {
+            "singleVisual": {}
+          },
+          "detail_nav_method": {
+            "singleVisual": {}
+          },
+          "detail_reset": {
+            "singleVisual": {}
+          },
+          "detail_scope": {
+            "singleVisual": {}
+          },
+          "detail_footer": {
+            "singleVisual": {}
+          },
+          "detail_job": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "detail_back": {
+            "singleVisual": {}
+          },
+          "detail_Average_JD_Quality": {
+            "singleVisual": {}
+          },
+          "detail_Total_Postings": {
+            "singleVisual": {}
+          },
+          "detail_Visible_Flags": {
+            "singleVisual": {}
+          },
+          "detail_Repost_Events": {
+            "singleVisual": {}
+          },
+          "detail_posting": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "one_job_evidence",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "f",
+                        "Entity": "ReportMeasures",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "f"
+                                  }
+                                },
+                                "Property": "One Job Selected"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ReportMeasures"
+                        }
+                      },
+                      "Property": "One Job Selected"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {}
+          },
+          "detail_flags": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "one_job_flags",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "f",
+                        "Entity": "ReportMeasures",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "f"
+                                  }
+                                },
+                                "Property": "One Job Selected"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ReportMeasures"
+                        }
+                      },
+                      "Property": "One Job Selected"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {}
+          },
+          "detail_description": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "one_job_description",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "f",
+                        "Entity": "ReportMeasures",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "f"
+                                  }
+                                },
+                                "Property": "One Job Selected"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ReportMeasures"
+                        }
+                      },
+                      "Property": "One Job Selected"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# One source, one run size, one set of visible scoring rules.
+source:
+  name: historical_linkedin_2024
+  path: notebooks/data/raw/historical_linkedin_124k/postings.csv
+  snapshot_date: 2024-04-20
+  licence_note: Review the original Kaggle source terms before redistribution.
+run:
+  # Full source for the completed report; use 5000 for a small learning run.
+  row_limit: null
+  score_version: notebook_v3
+scoring:
+  weights:
+    completeness: 0.30
+    experience_consistency: 0.20
+    salary_transparency: 0.15
+    location_clarity: 0.10
+    role_alignment: 0.15
+    duplicate_repost: 0.10
+  quality_bands:
+    high_quality: 85
+    generally_clear: 70
+    review_recommended: 50

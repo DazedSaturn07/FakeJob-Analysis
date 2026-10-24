@@ -1,0 +1,31 @@
+{
+  "name": "Job Market",
+  "dataColors": [
+    "#087F8C",
+    "#142B45",
+    "#C48327",
+    "#779CB5",
+    "#B05855",
+    "#7F8B99"
+  ],
+  "background": "#F3F6FA",
+  "foreground": "#243B53",
+  "tableAccent": "#087F8C",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#243B53"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 11,
+      "color": "#65768A"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 28,
+      "color": "#087F8C"
+    }
+  }
+}

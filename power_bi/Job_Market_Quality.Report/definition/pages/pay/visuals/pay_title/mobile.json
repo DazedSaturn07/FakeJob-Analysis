@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/1.0.0/schema.json",
+  "position": {
+    "x": 8,
+    "y": 12,
+    "z": 25,
+    "width": 304,
+    "height": 70
+  },
+  "objects": {
+    "general": [
+      {
+        "properties": {
+          "paragraphs": [
+            {
+              "textRuns": [
+                {
+                  "value": "Pay & clarity",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "20pt",
+                    "color": "#142B45",
+                    "fontWeight": "bold"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

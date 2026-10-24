@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Reset Method & checks",
+  "name": "reset_method",
+  "options": {
+    "suppressActiveSection": true,
+    "suppressDisplay": true
+  },
+  "explorationState": {
+    "version": "1.0",
+    "activeSection": "method",
+    "sections": {
+      "method": {
+        "visualContainers": {
+          "method_brand": {
+            "singleVisual": {}
+          },
+          "method_brand_sub": {
+            "singleVisual": {}
+          },
+          "method_title": {
+            "singleVisual": {}
+          },
+          "method_period": {
+            "singleVisual": {}
+          },
+          "method_nav_overview": {
+            "singleVisual": {}
+          },
+          "method_nav_pay": {
+            "singleVisual": {}
+          },
+          "method_nav_entry": {
+            "singleVisual": {}
+          },
+          "method_nav_repeats": {
+            "singleVisual": {}
+          },
+          "method_nav_detail": {
+            "singleVisual": {}
+          },
+          "method_nav_method": {
+            "singleVisual": {}
+          },
+          "method_reset": {
+            "singleVisual": {}
+          },
+          "method_scope": {
+            "singleVisual": {}
+          },
+          "method_footer": {
+            "singleVisual": {}
+          },
+          "method_source": {
+            "singleVisual": {}
+          },
+          "method_rules": {
+            "singleVisual": {}
+          },
+          "method_bands": {
+            "singleVisual": {}
+          },
+          "method_limitations": {
+            "singleVisual": {}
+          },
+          "method_checks": {
+            "singleVisual": {}
+          }
+        }
+      }
+    }
+  }
+}

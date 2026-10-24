@@ -1,0 +1,73 @@
+// Add ONE definition at a time with Modeling > New measure.
+// Counts use visible posting observations. TREATAS transfers their job IDs to job-level facts.
+
+Total Postings = COUNTROWS ( fact_job_posting )
+
+Distinct Jobs = DISTINCTCOUNT ( fact_job_posting[job_key] )
+
+Average JD Quality =
+CALCULATE (
+    AVERAGE ( fact_job_quality[jd_quality_score] ),
+    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_quality[job_key] ) )
+)
+
+Salary Transparency % =
+DIVIDE (
+    CALCULATE ( [Total Postings], KEEPFILTERS ( fact_job_posting[salary_numeric_present] = TRUE () ) ),
+    [Total Postings]
+)
+
+Entry-Level Jobs =
+CALCULATE ( [Distinct Jobs], KEEPFILTERS ( fact_job_posting[seniority_title] = "entry" ) )
+
+Entry Jobs Requiring 2+ Years =
+CALCULATE (
+    [Distinct Jobs],
+    KEEPFILTERS ( fact_job_posting[seniority_title] = "entry" ),
+    KEEPFILTERS ( fact_job_posting[experience_min_years] >= 2 )
+)
+
+Entry 2+ Years % = DIVIDE ( [Entry Jobs Requiring 2+ Years], [Entry-Level Jobs] )
+
+Scored Jobs =
+CALCULATE (
+    DISTINCTCOUNT ( fact_job_quality[job_key] ),
+    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_quality[job_key] ) )
+)
+
+Quality Review Jobs =
+CALCULATE (
+    [Scored Jobs],
+    KEEPFILTERS ( fact_job_quality[quality_band] IN { "Review Recommended", "Multiple Quality Concerns" } )
+)
+
+Quality Band =
+CALCULATE (
+    SELECTEDVALUE ( fact_job_quality[quality_band] ),
+    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_quality[job_key] ) )
+)
+
+Visible Flags =
+CALCULATE (
+    COUNTROWS ( fact_job_flag ),
+    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_flag[job_key] ) )
+)
+
+Jobs with Entry Review Flags =
+CALCULATE (
+    DISTINCTCOUNT ( fact_job_flag[job_key] ),
+    KEEPFILTERS ( fact_job_flag[rule_code] = "ENTRY_ROLE_REQUIRES_2PLUS_YEARS" ),
+    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_flag[job_key] ) )
+)
+
+Repost Events =
+CALCULATE (
+    COUNTROWS ( fact_repost_event ),
+    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[source_job_id] ), fact_repost_event[current_source_job_id] ) )
+)
+
+Jobs with Skill =
+CALCULATE (
+    DISTINCTCOUNT ( bridge_job_skill[job_key] ),
+    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), bridge_job_skill[job_key] ) )
+)

@@ -1,0 +1,166 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Reset Pay & clarity",
+  "name": "reset_pay",
+  "options": {
+    "suppressActiveSection": true,
+    "suppressDisplay": true
+  },
+  "explorationState": {
+    "version": "1.0",
+    "activeSection": "pay",
+    "sections": {
+      "pay": {
+        "visualContainers": {
+          "pay_brand": {
+            "singleVisual": {}
+          },
+          "pay_brand_sub": {
+            "singleVisual": {}
+          },
+          "pay_title": {
+            "singleVisual": {}
+          },
+          "pay_period": {
+            "singleVisual": {}
+          },
+          "pay_nav_overview": {
+            "singleVisual": {}
+          },
+          "pay_nav_pay": {
+            "singleVisual": {}
+          },
+          "pay_nav_entry": {
+            "singleVisual": {}
+          },
+          "pay_nav_repeats": {
+            "singleVisual": {}
+          },
+          "pay_nav_detail": {
+            "singleVisual": {}
+          },
+          "pay_nav_method": {
+            "singleVisual": {}
+          },
+          "pay_reset": {
+            "singleVisual": {}
+          },
+          "pay_scope": {
+            "singleVisual": {}
+          },
+          "pay_footer": {
+            "singleVisual": {}
+          },
+          "pay_role": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "pay_seniority": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "pay_employment": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "pay_date": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "pay_Salary_Transparency__": {
+            "singleVisual": {}
+          },
+          "pay_Missing_Pay_Postings": {
+            "singleVisual": {}
+          },
+          "pay_Experience_Coverage__": {
+            "singleVisual": {}
+          },
+          "pay_Remote_Permission__": {
+            "singleVisual": {}
+          },
+          "pay_bands": {
+            "singleVisual": {}
+          },
+          "pay_role_pay": {
+            "singleVisual": {}
+          },
+          "pay_pay_periods": {
+            "singleVisual": {}
+          },
+          "pay_skills": {
+            "singleVisual": {}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2402 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"bridge_job_skill\",\"dim_company\",\"dim_date\",\"dim_job\",\"dim_location\",\"dim_role\",\"dim_skill\",\"dim_source\",\"fact_job_flag\",\"fact_job_posting\",\"fact_job_quality\",\"fact_repost_event\",\"ReportMeasures\",\"DataFolder\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "dim_company.company_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dim_company",
+                    "ConceptualProperty": "company_name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Company Name": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dim_date.full_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dim_date",
+                    "ConceptualProperty": "full_date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Full Date": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Posting date": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dim_job.job_key": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dim_job",
+                    "ConceptualProperty": "job_key"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Job ID": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Select one job ID, or drill through from a table": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dim_job.title_normalized": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dim_job",
+                    "ConceptualProperty": "title_normalized"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Title": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dim_role.canonical_role_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dim_role",
+                    "ConceptualProperty": "canonical_role_name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Role": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Canonical Role Name": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dim_skill.skill_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dim_skill",
+                    "ConceptualProperty": "skill_name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Skill Name": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_flag.evidence_text": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_flag",
+                    "ConceptualProperty": "evidence_text"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Reason": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_flag.expected_value": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_flag",
+                    "ConceptualProperty": "expected_value"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Expected": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_flag.observed_value": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_flag",
+                    "ConceptualProperty": "observed_value"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Observed": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_flag.rule_code": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_flag",
+                    "ConceptualProperty": "rule_code"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Rule": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.employment_type": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "employment_type"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Employment type": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.experience_min_years": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "experience_min_years"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Min years": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Years": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.pay_disclosure": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "Pay disclosure"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Pay Disclosure": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.quality_band": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "Quality band"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Quality Band": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Band": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.salary_currency": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "salary_currency"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Currency": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.salary_max": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "salary_max"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Max pay": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.salary_median": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "salary_median"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Median pay": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.salary_min": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "salary_min"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Min pay": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.salary_period": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "salary_period"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Pay period": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Period": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.seniority_title": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "seniority_title"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Title seniority": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.source_job_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "source_job_id"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Source ID": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fact_job_posting.title_raw": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fact_job_posting",
+                    "ConceptualProperty": "title_raw"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Posting title": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Title": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.average_jd_quality": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Average JD Quality"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Average clarity score / 100": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Score": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Representative clarity score": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Average score": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.distinct_jobs": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Distinct Jobs"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Exact job-text groups": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Exact groups": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Job groups": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.entry_2_years_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Entry 2+ Years %"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Share of entry-title groups": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.entry_jobs_requiring_2_years": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Entry Jobs Requiring 2+ Years"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Groups with parsed 2+ years": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Parsed 2+ years": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.entrylevel_jobs": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Entry-Level Jobs"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Explicit entry-title groups": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Entry groups": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.experience_coverage_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Experience Coverage %"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Numeric experience parsed": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.job_description": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Job Description"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Latest observed description (up to 6,000 characters)": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.jobs_with_entry_review_flags": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Jobs with Entry Review Flags"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Representative jobs flagged": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.jobs_with_skill": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Jobs with Skill"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Jobs mentioning skill": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.missing_pay_postings": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Missing Pay Postings"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "No numeric pay": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.remote_permission_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Remote Permission %"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Remote permission confirmed": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.repeat_share_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Repeat Share %"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Repeated observation share": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.repost_events": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Repost Events"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Repeated observations": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Repeats": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Extra repeated observations": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.salary_numeric_rows": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Salary Numeric Rows"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Numeric pay": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.salary_transparency_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Salary Transparency %"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Numeric pay disclosure": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Disclosure": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Numeric pay disclosed": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.total_postings": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Total Postings"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Observations": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Posting observations": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Observations for selection": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "reportmeasures.visible_flags": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "ReportMeasures",
+                    "ConceptualProperty": "Visible Flags"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Rule flags": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DataFolder",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ],
+        "expression": "\"C:/data/FakeJob-Analysis/notebooks/data/exports\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "5e2ac1b6-0e50-4810-bb57-c9bd1ad76f78"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "dim_job_company_key_dim_company",
+        "fromColumn": "company_key",
+        "fromTable": "dim_job",
+        "toColumn": "company_key",
+        "toTable": "dim_company"
+      },
+      {
+        "name": "dim_job_role_key_dim_role",
+        "fromColumn": "role_key",
+        "fromTable": "dim_job",
+        "toColumn": "role_key",
+        "toTable": "dim_role"
+      },
+      {
+        "name": "fact_job_posting_source_key_dim_source",
+        "fromColumn": "source_key",
+        "fromTable": "fact_job_posting",
+        "toColumn": "source_key",
+        "toTable": "dim_source"
+      },
+      {
+        "name": "fact_job_posting_published_date_key_dim_date",
+        "fromColumn": "published_date_key",
+        "fromTable": "fact_job_posting",
+        "toColumn": "date_key",
+        "toTable": "dim_date"
+      },
+      {
+        "name": "fact_job_posting_job_key_dim_job",
+        "fromColumn": "job_key",
+        "fromTable": "fact_job_posting",
+        "toColumn": "job_key",
+        "toTable": "dim_job"
+      },
+      {
+        "name": "fact_job_quality_job_key_dim_job",
+        "fromColumn": "job_key",
+        "fromTable": "fact_job_quality",
+        "toColumn": "job_key",
+        "toTable": "dim_job"
+      },
+      {
+        "name": "fact_job_flag_job_key_dim_job",
+        "fromColumn": "job_key",
+        "fromTable": "fact_job_flag",
+        "toColumn": "job_key",
+        "toTable": "dim_job"
+      },
+      {
+        "name": "bridge_job_skill_job_key_dim_job",
+        "fromColumn": "job_key",
+        "fromTable": "bridge_job_skill",
+        "toColumn": "job_key",
+        "toTable": "dim_job"
+      },
+      {
+        "name": "fact_repost_event_job_key_dim_job",
+        "fromColumn": "job_key",
+        "fromTable": "fact_repost_event",
+        "toColumn": "job_key",
+        "toTable": "dim_job"
+      },
+      {
+        "name": "bridge_job_skill_skill_key_dim_skill",
+        "fromColumn": "skill_key",
+        "fromTable": "bridge_job_skill",
+        "toColumn": "skill_key",
+        "toTable": "dim_skill"
+      },
+      {
+        "name": "fact_job_posting_location_key_dim_location",
+        "fromColumn": "location_key",
+        "fromTable": "fact_job_posting",
+        "toColumn": "location_key",
+        "toTable": "dim_location"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "bridge_job_skill",
+        "columns": [
+          {
+            "name": "job_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "27e516db-c4f5-41d3-9f68-bce437c2a966",
+            "sourceColumn": "job_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "skill_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "8df0abd6-8f37-4623-81fe-63337a19f7e2",
+            "sourceColumn": "skill_key",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e0592fe1-c8e2-4e7b-9521-cb8a20a04011",
+        "partitions": [
+          {
+            "name": "bridge_job_skill",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/bridge_job_skill.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"job_key\", Int64.Type}, {\"skill_key\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_company",
+        "columns": [
+          {
+            "name": "company_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "7d0b4d47-489f-425b-87a5-5ffbceb1df8c",
+            "sourceColumn": "company_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "company_name",
+            "dataType": "string",
+            "lineageTag": "cfa67f34-bfcf-48d3-bc2b-0a723fe863b7",
+            "sourceColumn": "company_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "normalized_company_name",
+            "dataType": "string",
+            "lineageTag": "435fb5d2-bb1e-4186-a3d0-0c609b2a6e57",
+            "sourceColumn": "normalized_company_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "industry",
+            "dataType": "string",
+            "lineageTag": "845e0def-c53e-4fdc-bc79-cdb08905240b",
+            "sourceColumn": "industry",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "lineageTag": "3758640c-710a-467c-bdb7-b886cdeb6ea3",
+            "sourceColumn": "country",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "45df47a0-934c-45a0-978d-da8c91076b99",
+        "partitions": [
+          {
+            "name": "dim_company",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/dim_company.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"company_key\", Int64.Type}, {\"company_name\", type text}, {\"normalized_company_name\", type text}, {\"industry\", type text}, {\"country\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_date",
+        "columns": [
+          {
+            "name": "date_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "8a0afbf1-f889-495d-9941-a23294f99853",
+            "sourceColumn": "date_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "full_date",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd MMM yyyy",
+            "isKey": true,
+            "lineageTag": "9614c0c1-a125-4746-b002-a6ab522a2359",
+            "sourceColumn": "full_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year",
+            "dataType": "int64",
+            "lineageTag": "d63949f5-8721-46a2-9f43-99e10d62866e",
+            "sourceColumn": "year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quarter",
+            "dataType": "int64",
+            "lineageTag": "8dfd2351-8b8c-4274-88ca-5e7cc412ee32",
+            "sourceColumn": "quarter",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "month",
+            "dataType": "int64",
+            "lineageTag": "ca931a8b-66db-4429-9fdb-2728b4af30a5",
+            "sourceColumn": "month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "month_name",
+            "dataType": "string",
+            "lineageTag": "1b2045c2-38f7-44d4-932d-5676e113245e",
+            "sortByColumn": "month",
+            "sourceColumn": "month_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "day",
+            "dataType": "int64",
+            "lineageTag": "8a4ffbad-14e9-4e6d-aec5-5aa431104cd4",
+            "sourceColumn": "day",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "day_of_week",
+            "dataType": "string",
+            "lineageTag": "d981960c-bc44-4442-a52d-c3074cd0b170",
+            "sourceColumn": "day_of_week",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_weekend",
+            "dataType": "int64",
+            "lineageTag": "11fe23e0-bdc1-4bdb-a725-b5d13015628e",
+            "sourceColumn": "is_weekend",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b8b2ecee-d4d8-4a79-8867-df406ccf4d6b",
+        "partitions": [
+          {
+            "name": "dim_date",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/dim_date.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"date_key\", Int64.Type}, {\"full_date\", type date}, {\"year\", Int64.Type}, {\"quarter\", Int64.Type}, {\"month\", Int64.Type}, {\"month_name\", type text}, {\"day\", Int64.Type}, {\"day_of_week\", type text}, {\"is_weekend\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_job",
+        "columns": [
+          {
+            "name": "job_key",
+            "dataType": "int64",
+            "lineageTag": "041a3b6c-553f-4a0c-acbf-36c414dd2f8c",
+            "sourceColumn": "job_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "canonical_job_key",
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "009f6153-7d05-42d6-a051-d3cdd04cbf55",
+            "sourceColumn": "canonical_job_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "title_normalized",
+            "dataType": "string",
+            "lineageTag": "826a2427-b31b-45bd-8525-b2c0fd0d87a2",
+            "sourceColumn": "title_normalized",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "company_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "7867be70-1249-4f8b-a2ba-ddd4d099b21c",
+            "sourceColumn": "company_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "role_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "8b46de06-22a9-4d90-8427-d705986e71ca",
+            "sourceColumn": "role_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "location_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "139e85b6-6272-448a-a4f3-424c3c84c78d",
+            "sourceColumn": "location_key",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d273e417-63f9-48ba-ba15-d01b6bc5dc41",
+        "partitions": [
+          {
+            "name": "dim_job",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/dim_job.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"job_key\", Int64.Type}, {\"canonical_job_key\", type text}, {\"title_normalized\", type text}, {\"company_key\", Int64.Type}, {\"role_key\", Int64.Type}, {\"location_key\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_location",
+        "columns": [
+          {
+            "name": "location_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "e648eab4-febe-4209-b5b9-55fb59acedad",
+            "sourceColumn": "location_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "lineageTag": "f03a055c-14e7-4091-98d5-af35e1c3709c",
+            "sourceColumn": "city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "region",
+            "dataType": "string",
+            "lineageTag": "3040e957-e97a-4ac7-bfaf-422e67cfe1ea",
+            "sourceColumn": "region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "lineageTag": "6f755ca6-5857-4dde-9e80-18d1c9cb5c0d",
+            "sourceColumn": "country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "metro",
+            "dataType": "string",
+            "lineageTag": "78f16147-f139-4d6d-a7ce-365d067cc795",
+            "sourceColumn": "metro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "workplace_type",
+            "dataType": "string",
+            "lineageTag": "fc28c4c4-30d3-4cc4-b85b-1e65e4e365e6",
+            "sourceColumn": "workplace_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "location_normalized",
+            "dataType": "string",
+            "lineageTag": "b4f53781-8b0c-4173-b485-64812b998d09",
+            "sourceColumn": "location_normalized",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4b6c01d8-473f-43dd-a0ec-7bf260e75d54",
+        "partitions": [
+          {
+            "name": "dim_location",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/dim_location.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"location_key\", Int64.Type}, {\"city\", type text}, {\"region\", type text}, {\"country\", type text}, {\"metro\", type text}, {\"workplace_type\", type text}, {\"location_normalized\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_role",
+        "columns": [
+          {
+            "name": "role_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "b63e437c-9122-49ec-ab60-186dddcd9744",
+            "sourceColumn": "role_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "canonical_role_name",
+            "dataType": "string",
+            "lineageTag": "6ad7e490-749b-4eb5-af06-f55a7d4e6b59",
+            "sourceColumn": "canonical_role_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "role_family",
+            "dataType": "string",
+            "lineageTag": "409799f5-0c2a-4481-a8c9-30e1521856ed",
+            "sourceColumn": "role_family",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "occupational_group",
+            "dataType": "string",
+            "lineageTag": "b765ffba-2ef8-4367-b918-ab125acf4655",
+            "sourceColumn": "occupational_group",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "eff7b5b9-fcc1-40b1-aa6f-8c0f59b9ef71",
+        "partitions": [
+          {
+            "name": "dim_role",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/dim_role.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"role_key\", Int64.Type}, {\"canonical_role_name\", type text}, {\"role_family\", type text}, {\"occupational_group\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_skill",
+        "columns": [
+          {
+            "name": "skill_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "d4769b5d-eca1-41d1-a641-fc02c9b8b0eb",
+            "sourceColumn": "skill_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "skill_name",
+            "dataType": "string",
+            "lineageTag": "46d31341-5814-4441-9cbe-9ea8f8ad1bd9",
+            "sourceColumn": "skill_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "category",
+            "dataType": "string",
+            "lineageTag": "ebca9f1e-2a30-4d3f-b23d-90954c5df906",
+            "sourceColumn": "category",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "7047f93d-f4b6-4504-8b88-71e659e47d12",
+        "partitions": [
+          {
+            "name": "dim_skill",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/dim_skill.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"skill_key\", Int64.Type}, {\"skill_name\", type text}, {\"category\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_source",
+        "columns": [
+          {
+            "name": "source_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "edb6f7a6-4b9d-4ebc-96ca-306c5cc9eeb5",
+            "sourceColumn": "source_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_name",
+            "dataType": "string",
+            "lineageTag": "a5c52495-ef0b-4276-a0a0-9e21d5738ee4",
+            "sourceColumn": "source_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_type",
+            "dataType": "string",
+            "lineageTag": "fef05af1-4bbe-478a-90ce-d0c8180b8d2c",
+            "sourceColumn": "source_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "platform_or_ats",
+            "dataType": "string",
+            "lineageTag": "1bec8db3-bb2a-4fd5-ae70-20c500e3125e",
+            "sourceColumn": "platform_or_ats",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "collection_method",
+            "dataType": "string",
+            "lineageTag": "b645bdff-63b3-45e7-95dc-147eabedef76",
+            "sourceColumn": "collection_method",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "cddad9ea-dd35-46bc-a079-e585e274e48f",
+        "partitions": [
+          {
+            "name": "dim_source",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/dim_source.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"source_key\", Int64.Type}, {\"source_name\", type text}, {\"source_type\", type text}, {\"platform_or_ats\", type text}, {\"collection_method\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_job_flag",
+        "columns": [
+          {
+            "name": "flag_id",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "21d81f51-b37d-4f8f-a971-9907a1c9d20f",
+            "sourceColumn": "flag_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "job_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "d055d10d-3451-4ef4-877d-212cd1af7403",
+            "sourceColumn": "job_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rule_code",
+            "dataType": "string",
+            "lineageTag": "d014b144-2708-48b4-9eb0-8fb6bcd65bd1",
+            "sourceColumn": "rule_code",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "severity",
+            "dataType": "string",
+            "lineageTag": "62f351e6-7203-4dfb-9346-a880e8aadfaa",
+            "sourceColumn": "severity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "observed_value",
+            "dataType": "string",
+            "lineageTag": "62bc5ee0-7e7a-4353-ba48-6e7ae7d240e9",
+            "sourceColumn": "observed_value",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "expected_value",
+            "dataType": "string",
+            "lineageTag": "d4c23474-7f71-4b67-9de2-4fb36130f4a7",
+            "sourceColumn": "expected_value",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "evidence_text",
+            "dataType": "string",
+            "lineageTag": "0b012043-19f8-445b-988a-7400ea33357e",
+            "sourceColumn": "evidence_text",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "created_at",
+            "dataType": "dateTime",
+            "formatString": "dd MMM yyyy HH:mm",
+            "isHidden": true,
+            "lineageTag": "3b25ba10-7b52-4776-9be1-0565e5f06079",
+            "sourceColumn": "created_at",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "2785664a-dcb8-4d8b-8df2-c4b43732a657",
+        "partitions": [
+          {
+            "name": "fact_job_flag",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/fact_job_flag.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"flag_id\", Int64.Type}, {\"job_key\", Int64.Type}, {\"rule_code\", type text}, {\"severity\", type text}, {\"observed_value\", type text}, {\"expected_value\", type text}, {\"evidence_text\", type text}, {\"created_at\", type datetime}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_job_posting",
+        "columns": [
+          {
+            "name": "posting_observation_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "46a21fbe-bfa0-446d-8385-295e9e2e6a8d",
+            "sourceColumn": "posting_observation_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "job_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "6eac7587-c356-45df-9b3b-8ba51197611f",
+            "sourceColumn": "job_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "6461c1b3-d6db-4f8c-84b3-b5bd396d6ce0",
+            "sourceColumn": "source_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "company_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "ad7dd19f-f98f-4baf-9247-4e3c3ea39311",
+            "sourceColumn": "company_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "role_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "abd9a7fa-fba5-49fc-a3d3-f1b6ebfd29b4",
+            "sourceColumn": "role_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "location_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "09b046e2-817c-4918-b65c-6a6ae1a79485",
+            "sourceColumn": "location_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "published_date_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "6240b717-7084-4836-97dd-a88dcdfc99a9",
+            "sourceColumn": "published_date_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "observed_date_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "219e9d6b-44f9-49b6-b494-24d2c23b4495",
+            "sourceColumn": "observed_date_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_job_id",
+            "dataType": "string",
+            "lineageTag": "21c0f921-80b3-4889-bd41-84d0ef608b73",
+            "sourceColumn": "source_job_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "title_raw",
+            "dataType": "string",
+            "lineageTag": "18033297-a478-4e00-a4ae-5de23af52301",
+            "sourceColumn": "title_raw",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "title_normalized",
+            "dataType": "string",
+            "lineageTag": "0f5d19c0-4cc7-4fed-aa80-6c79c11d4a86",
+            "sourceColumn": "title_normalized",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "description_clean",
+            "dataType": "string",
+            "lineageTag": "58a66216-1407-4a08-b4e8-25164def9dd2",
+            "sourceColumn": "description_clean",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "seniority_title",
+            "dataType": "string",
+            "lineageTag": "26ce868b-1e13-4d21-9368-9311c222cf09",
+            "sourceColumn": "seniority_title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "employment_type",
+            "dataType": "string",
+            "lineageTag": "e8213505-f500-4e5a-b017-6a322f4232ca",
+            "sourceColumn": "employment_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "workplace_type",
+            "dataType": "string",
+            "lineageTag": "41a6c310-e4ac-4faa-adab-fdeeaa89b787",
+            "sourceColumn": "workplace_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "experience_min_years",
+            "dataType": "double",
+            "lineageTag": "ab5759a6-56e4-4227-863b-9002ec521521",
+            "sourceColumn": "experience_min_years",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "experience_max_years",
+            "dataType": "double",
+            "lineageTag": "02acce29-002a-4a88-a650-7d0e4dc8926d",
+            "sourceColumn": "experience_max_years",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "salary_min",
+            "dataType": "double",
+            "lineageTag": "5541554b-0590-4271-9e3a-204fb54766a5",
+            "sourceColumn": "salary_min",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "salary_max",
+            "dataType": "double",
+            "lineageTag": "c4c51b85-974d-405e-ae35-89ea76068d2e",
+            "sourceColumn": "salary_max",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "salary_median",
+            "dataType": "double",
+            "lineageTag": "f8c662e7-ac16-45ad-a255-d27c91e32dea",
+            "sourceColumn": "salary_median",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "salary_currency",
+            "dataType": "string",
+            "lineageTag": "0c10caf7-e863-47a2-b5ad-c3575f8c055b",
+            "sourceColumn": "salary_currency",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "salary_period",
+            "dataType": "string",
+            "lineageTag": "e728b119-dccb-4c51-83d4-6a039e9d5931",
+            "sourceColumn": "salary_period",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "posting_age_days",
+            "dataType": "int64",
+            "lineageTag": "73fbf984-3aaf-4f66-b3c1-572e8de2ee73",
+            "sourceColumn": "posting_age_days",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "description_word_count",
+            "dataType": "int64",
+            "lineageTag": "536312ea-8d24-4fa3-8ac6-c36864e206aa",
+            "sourceColumn": "description_word_count",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "salary_numeric_present",
+            "dataType": "boolean",
+            "lineageTag": "80de9be7-9937-4c02-b382-da360471d47e",
+            "sourceColumn": "salary_numeric_present",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "experience_numeric_present",
+            "dataType": "boolean",
+            "lineageTag": "041a56d2-2a4a-4293-806a-a3f7c14c084e",
+            "sourceColumn": "experience_numeric_present",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "payload_hash",
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "5b82ed34-55d9-4a40-9cb5-17373a42e996",
+            "sourceColumn": "payload_hash",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quality band",
+            "dataType": "string",
+            "expression": "LOOKUPVALUE(fact_job_quality[quality_band], fact_job_quality[job_key], fact_job_posting[job_key])",
+            "lineageTag": "6b645198-98d4-4adf-9f17-8a0f969c35ca",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Pay disclosure",
+            "dataType": "string",
+            "expression": "IF(fact_job_posting[salary_numeric_present], \"Numeric pay disclosed\", \"No numeric pay\")",
+            "lineageTag": "c39cc9ca-38ff-4c7f-82be-0005a4a67df2",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Experience evidence",
+            "dataType": "string",
+            "expression": "IF(fact_job_posting[experience_numeric_present], \"Numeric phrase found\", \"Not parsed\")",
+            "lineageTag": "64092918-c47a-4beb-aaf7-f44016541452",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "7b6e1dc4-2eb9-4f49-81fc-b75fabd20722",
+        "partitions": [
+          {
+            "name": "fact_job_posting",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/fact_job_posting.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"posting_observation_key\", Int64.Type}, {\"job_key\", Int64.Type}, {\"source_key\", Int64.Type}, {\"company_key\", Int64.Type}, {\"role_key\", Int64.Type}, {\"location_key\", Int64.Type}, {\"published_date_key\", Int64.Type}, {\"observed_date_key\", Int64.Type}, {\"source_job_id\", type text}, {\"title_raw\", type text}, {\"title_normalized\", type text}, {\"description_clean\", type text}, {\"seniority_title\", type text}, {\"employment_type\", type text}, {\"workplace_type\", type text}, {\"experience_min_years\", type number}, {\"experience_max_years\", type number}, {\"salary_min\", type number}, {\"salary_max\", type number}, {\"salary_median\", type number}, {\"salary_currency\", type text}, {\"salary_period\", type text}, {\"posting_age_days\", Int64.Type}, {\"description_word_count\", Int64.Type}, {\"salary_numeric_present\", type logical}, {\"experience_numeric_present\", type logical}, {\"payload_hash\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_job_quality",
+        "columns": [
+          {
+            "name": "job_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "82f99f2c-fb39-4e71-8556-d5c9cdaa3c8a",
+            "sourceColumn": "job_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "score_version",
+            "dataType": "string",
+            "lineageTag": "605a6eb2-3509-48ed-b536-b4b23c84f92a",
+            "sourceColumn": "score_version",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "jd_quality_score",
+            "dataType": "double",
+            "lineageTag": "79e6e917-a027-4725-9e1b-9cdd9f29d4cd",
+            "sourceColumn": "jd_quality_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quality_band",
+            "dataType": "string",
+            "lineageTag": "f2b32188-c37d-4dd8-9836-2f3bc74ecdcd",
+            "sourceColumn": "quality_band",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "completeness_score",
+            "dataType": "double",
+            "lineageTag": "efb6f049-8188-46f7-83a1-e17a1f363fe5",
+            "sourceColumn": "completeness_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "experience_consistency_score",
+            "dataType": "double",
+            "lineageTag": "460cd5d2-3b1b-4922-83ea-7d3b78b63bd3",
+            "sourceColumn": "experience_consistency_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "role_alignment_score",
+            "dataType": "double",
+            "lineageTag": "f6b8aac1-1da9-4285-b25e-d03d9b73235e",
+            "sourceColumn": "role_alignment_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "salary_transparency_score",
+            "dataType": "double",
+            "lineageTag": "f988557f-9e5a-4441-acfc-d29b53e176fd",
+            "sourceColumn": "salary_transparency_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "duplicate_repost_score",
+            "dataType": "double",
+            "lineageTag": "b9223a0c-4100-4722-85bd-4d545f7eddaa",
+            "sourceColumn": "duplicate_repost_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "location_clarity_score",
+            "dataType": "double",
+            "lineageTag": "aeb4b542-7e7b-4e80-983b-cae88caf932b",
+            "sourceColumn": "location_clarity_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "flag_count",
+            "dataType": "int64",
+            "lineageTag": "bcd7350d-089c-4a64-b19c-8a97c309f958",
+            "sourceColumn": "flag_count",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "scored_at",
+            "dataType": "dateTime",
+            "formatString": "dd MMM yyyy HH:mm",
+            "isHidden": true,
+            "lineageTag": "b3b7b84e-d36c-4e1a-b413-3d1147a1d184",
+            "sourceColumn": "scored_at",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "933fa548-aa4d-431c-a7af-1237be1f317a",
+        "partitions": [
+          {
+            "name": "fact_job_quality",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/fact_job_quality.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"job_key\", Int64.Type}, {\"score_version\", type text}, {\"jd_quality_score\", type number}, {\"quality_band\", type text}, {\"completeness_score\", type number}, {\"experience_consistency_score\", type number}, {\"role_alignment_score\", type number}, {\"salary_transparency_score\", type number}, {\"duplicate_repost_score\", type number}, {\"location_clarity_score\", type number}, {\"flag_count\", Int64.Type}, {\"scored_at\", type datetime}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_repost_event",
+        "columns": [
+          {
+            "name": "repost_event_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "2d223912-d12a-418d-9d11-a963091c0061",
+            "sourceColumn": "repost_event_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "job_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "05234365-a13b-415c-9bda-b0b8a33e4e59",
+            "sourceColumn": "job_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "previous_source_job_id",
+            "dataType": "string",
+            "lineageTag": "50212f10-a5cd-420b-ade0-cd70474c41d6",
+            "sourceColumn": "previous_source_job_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "current_source_job_id",
+            "dataType": "string",
+            "lineageTag": "c6f0bb2e-aff3-4f01-977b-36516278a62f",
+            "sourceColumn": "current_source_job_id",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "02215368-09aa-4ddb-966c-93c7ad56b413",
+        "partitions": [
+          {
+            "name": "fact_repost_event",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"/fact_repost_event.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"repost_event_key\", Int64.Type}, {\"job_key\", Int64.Type}, {\"previous_source_job_id\", type text}, {\"current_source_job_id\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "ReportMeasures",
+        "columns": [
+          {
+            "name": "Placeholder",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "e186705a-61ea-48c4-ac55-d631d85a5fb1",
+            "sourceColumn": "Placeholder"
+          }
+        ],
+        "lineageTag": "1ec384cd-46a3-4bf0-9e5c-8bb806c9f2cd",
+        "measures": [
+          {
+            "name": "Total Postings",
+            "displayFolder": "Clarity measures",
+            "expression": "COUNTROWS ( fact_job_posting )",
+            "formatString": "#,0",
+            "lineageTag": "ae16467e-5b9f-47ac-afe6-289f62371583"
+          },
+          {
+            "name": "Distinct Jobs",
+            "displayFolder": "Clarity measures",
+            "expression": "DISTINCTCOUNT ( fact_job_posting[job_key] )",
+            "formatString": "#,0",
+            "lineageTag": "ae900b2e-e633-4ad5-a132-970b2ac8a3c1"
+          },
+          {
+            "name": "Average JD Quality",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    AVERAGE ( fact_job_quality[jd_quality_score] ),",
+              "    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_quality[job_key] ) )",
+              ")"
+            ],
+            "formatString": "0.00",
+            "lineageTag": "f63790f7-2cbd-4330-b540-6fd3a4f6d262"
+          },
+          {
+            "name": "Salary Transparency %",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "DIVIDE (",
+              "    CALCULATE ( [Total Postings], KEEPFILTERS ( fact_job_posting[salary_numeric_present] = TRUE () ) ),",
+              "    [Total Postings]",
+              ")"
+            ],
+            "formatString": "0.0%",
+            "lineageTag": "9126b197-81cc-4b5b-9999-ed038eba72f1"
+          },
+          {
+            "name": "Entry-Level Jobs",
+            "displayFolder": "Clarity measures",
+            "expression": "CALCULATE ( [Distinct Jobs], KEEPFILTERS ( fact_job_posting[seniority_title] = \"entry\" ) )",
+            "formatString": "#,0",
+            "lineageTag": "192027eb-ba63-42f4-a77c-b6f5fe5d9103"
+          },
+          {
+            "name": "Entry Jobs Requiring 2+ Years",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    [Distinct Jobs],",
+              "    KEEPFILTERS ( fact_job_posting[seniority_title] = \"entry\" ),",
+              "    KEEPFILTERS ( fact_job_posting[experience_min_years] >= 2 )",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "24c86b8c-b462-4311-adf5-a3258e3e553a"
+          },
+          {
+            "name": "Entry 2+ Years %",
+            "displayFolder": "Clarity measures",
+            "expression": "DIVIDE ( [Entry Jobs Requiring 2+ Years], [Entry-Level Jobs] )",
+            "formatString": "0.0%",
+            "lineageTag": "a42795d0-ef20-41b4-b7b7-caf72cd6e42e"
+          },
+          {
+            "name": "Scored Jobs",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    DISTINCTCOUNT ( fact_job_quality[job_key] ),",
+              "    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_quality[job_key] ) )",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "28a93bde-d4ee-4173-9006-fae363ef8452"
+          },
+          {
+            "name": "Quality Review Jobs",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    [Scored Jobs],",
+              "    KEEPFILTERS ( fact_job_quality[quality_band] IN { \"Review Recommended\", \"Multiple Quality Concerns\" } )",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "2a1d6489-da55-4167-b2b1-4568414a2af9"
+          },
+          {
+            "name": "Quality Band",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    SELECTEDVALUE ( fact_job_quality[quality_band] ),",
+              "    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_quality[job_key] ) )",
+              ")"
+            ],
+            "lineageTag": "cf64a199-d9fc-4e4b-8ca8-e13ab3f21dc3"
+          },
+          {
+            "name": "Visible Flags",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    COUNTROWS ( fact_job_flag ),",
+              "    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_flag[job_key] ) )",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "f3d22474-d3a2-4ed0-b3b6-0316135b8ac7"
+          },
+          {
+            "name": "Jobs with Entry Review Flags",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    DISTINCTCOUNT ( fact_job_flag[job_key] ),",
+              "    KEEPFILTERS ( fact_job_flag[rule_code] = \"ENTRY_ROLE_REQUIRES_2PLUS_YEARS\" ),",
+              "    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), fact_job_flag[job_key] ) )",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "945c88b5-3eee-4a9c-bd5f-9f60b952717c"
+          },
+          {
+            "name": "Repost Events",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    COUNTROWS ( fact_repost_event ),",
+              "    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[source_job_id] ), fact_repost_event[current_source_job_id] ) )",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "3a0f0dff-2ca5-4e42-8c6c-39abaf79d14b"
+          },
+          {
+            "name": "Jobs with Skill",
+            "displayFolder": "Clarity measures",
+            "expression": [
+              "CALCULATE (",
+              "    DISTINCTCOUNT ( bridge_job_skill[job_key] ),",
+              "    KEEPFILTERS ( TREATAS ( VALUES ( fact_job_posting[job_key] ), bridge_job_skill[job_key] ) )",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "5e1d0569-7460-4258-8a42-1db832a42fd5"
+          },
+          {
+            "name": "Missing Pay Postings",
+            "displayFolder": "Clarity measures",
+            "expression": "CALCULATE([Total Postings], KEEPFILTERS(fact_job_posting[salary_numeric_present] = FALSE()))",
+            "formatString": "#,0",
+            "lineageTag": "aecc6ff2-1a74-4b16-98c5-a43bbd25d0a3"
+          },
+          {
+            "name": "Experience Coverage %",
+            "displayFolder": "Clarity measures",
+            "expression": "DIVIDE(CALCULATE([Total Postings], KEEPFILTERS(fact_job_posting[experience_numeric_present] = TRUE())), [Total Postings])",
+            "formatString": "0.0%",
+            "lineageTag": "f8d83a48-76db-408e-87bf-efd43de96c0e"
+          },
+          {
+            "name": "Remote Permission %",
+            "displayFolder": "Clarity measures",
+            "expression": "DIVIDE(CALCULATE([Total Postings], KEEPFILTERS(fact_job_posting[workplace_type] = \"remote\")), [Total Postings])",
+            "formatString": "0.0%",
+            "lineageTag": "b4dff9eb-d15e-403e-be17-314614cafe42"
+          },
+          {
+            "name": "Repeat Share %",
+            "displayFolder": "Clarity measures",
+            "expression": "DIVIDE([Repost Events], [Total Postings])",
+            "formatString": "0.0%",
+            "lineageTag": "5546ab49-b738-4bc5-9590-e6dd65e2cf77"
+          },
+          {
+            "name": "Review Share %",
+            "displayFolder": "Clarity measures",
+            "expression": "DIVIDE([Quality Review Jobs], [Distinct Jobs])",
+            "formatString": "0.0%",
+            "lineageTag": "772990e5-a4bd-487b-b518-67722e0565c7"
+          },
+          {
+            "name": "One Job Selected",
+            "displayFolder": "Report controls",
+            "expression": "IF(COUNTROWS(ALLSELECTED(dim_job[job_key])) = 1, 1, 0)",
+            "formatString": "0",
+            "lineageTag": "5cffff26-3c85-4d62-bc04-63c88cc09df2"
+          },
+          {
+            "name": "Selected Title",
+            "displayFolder": "Report controls",
+            "expression": "IF([One Job Selected] = 1, SELECTEDVALUE(dim_job[title_normalized]), \"Choose a job ID\")",
+            "lineageTag": "9ae47747-957f-4f2b-a99c-4b02569b5763"
+          },
+          {
+            "name": "Top 10 Repeating Companies",
+            "displayFolder": "Report controls",
+            "expression": [
+              "VAR ThisCompany = SELECTEDVALUE(dim_company[company_key])",
+              "VAR TopCompanies = TOPN(10, ALLSELECTED(dim_company), [Repost Events], DESC, dim_company[company_key], ASC)",
+              "RETURN IF([Repost Events] > 0 && CONTAINS(TopCompanies, dim_company[company_key], ThisCompany), 1, 0)"
+            ],
+            "formatString": "0",
+            "lineageTag": "849c79e5-efcb-4ec3-8877-d7f5bbaa7d0b"
+          },
+          {
+            "name": "Job Description",
+            "displayFolder": "Report controls",
+            "expression": "IF([One Job Selected] = 1, CONCATENATEX(TOPN(1, fact_job_posting, fact_job_posting[published_date_key], DESC, fact_job_posting[source_job_id], DESC), LEFT(fact_job_posting[description_clean], 6000), \"\"))",
+            "lineageTag": "bbe47c68-e1e9-4823-b476-7a5c81ef0035"
+          },
+          {
+            "name": "Salary Numeric Rows",
+            "displayFolder": "Clarity measures",
+            "expression": "CALCULATE([Total Postings], KEEPFILTERS(fact_job_posting[salary_numeric_present] = TRUE()))",
+            "formatString": "#,0",
+            "lineageTag": "0bf299e2-7b21-4a19-b202-ffe7b9b95a35"
+          },
+          {
+            "name": "Mapped Role Filter",
+            "displayFolder": "Clarity measures",
+            "expression": "IF(SELECTEDVALUE(dim_role[canonical_role_name]) <> \"Unclassified\", 1, 0)",
+            "formatString": "0",
+            "lineageTag": "eac8c573-1969-4d1d-8cee-1430c3bcc92c"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "ReportMeasures",
+            "mode": "import",
+            "source": {
+              "expression": "#table(type table [Placeholder=Int64.Type], {{1}})",
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

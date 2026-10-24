@@ -1,0 +1,219 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Reset Overview",
+  "name": "reset_overview",
+  "options": {
+    "suppressActiveSection": true,
+    "suppressDisplay": true
+  },
+  "explorationState": {
+    "version": "1.0",
+    "activeSection": "overview",
+    "sections": {
+      "overview": {
+        "visualContainers": {
+          "overview_brand": {
+            "singleVisual": {}
+          },
+          "overview_brand_sub": {
+            "singleVisual": {}
+          },
+          "overview_title": {
+            "singleVisual": {}
+          },
+          "overview_period": {
+            "singleVisual": {}
+          },
+          "overview_nav_overview": {
+            "singleVisual": {}
+          },
+          "overview_nav_pay": {
+            "singleVisual": {}
+          },
+          "overview_nav_entry": {
+            "singleVisual": {}
+          },
+          "overview_nav_repeats": {
+            "singleVisual": {}
+          },
+          "overview_nav_detail": {
+            "singleVisual": {}
+          },
+          "overview_nav_method": {
+            "singleVisual": {}
+          },
+          "overview_reset": {
+            "singleVisual": {}
+          },
+          "overview_scope": {
+            "singleVisual": {}
+          },
+          "overview_footer": {
+            "singleVisual": {}
+          },
+          "overview_role": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "overview_seniority": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "overview_employment": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "overview_date": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "overview_Total_Postings": {
+            "singleVisual": {}
+          },
+          "overview_Distinct_Jobs": {
+            "singleVisual": {}
+          },
+          "overview_Average_JD_Quality": {
+            "singleVisual": {}
+          },
+          "overview_Salary_Transparency__": {
+            "singleVisual": {}
+          },
+          "overview_daily": {
+            "singleVisual": {}
+          },
+          "overview_role_volume": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "mapped_roles_only",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "f",
+                        "Entity": "ReportMeasures",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "f"
+                                  }
+                                },
+                                "Property": "Mapped Role Filter"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ReportMeasures"
+                        }
+                      },
+                      "Property": "Mapped Role Filter"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {}
+          },
+          "overview_pay": {
+            "singleVisual": {}
+          },
+          "overview_reading": {
+            "singleVisual": {}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "pay",
+  "displayName": "Pay & clarity",
+  "width": 1440,
+  "height": 900,
+  "displayOption": "FitToPage",
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F3F6FA'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0L"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F3F6FA'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "pay_skills",
+      "target": "pay_brand",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_brand_sub",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_title",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_period",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_nav_overview",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_nav_pay",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_nav_entry",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_nav_repeats",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_nav_detail",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_nav_method",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_reset",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_scope",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_footer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_role",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_seniority",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_employment",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_date",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_Salary_Transparency__",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_Missing_Pay_Postings",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_Experience_Coverage__",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_Remote_Permission__",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_bands",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_role_pay",
+      "type": "NoFilter"
+    },
+    {
+      "source": "pay_skills",
+      "target": "pay_pay_periods",
+      "type": "NoFilter"
+    }
+  ]
+}

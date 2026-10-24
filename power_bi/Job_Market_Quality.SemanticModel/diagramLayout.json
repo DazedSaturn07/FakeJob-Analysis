@@ -1,0 +1,178 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1446.6826241883207,
+            "y": 596.06880267016322
+          },
+          "nodeIndex": "ReportMeasures",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 279.77705269936479,
+            "y": 753.4849239437159
+          },
+          "nodeIndex": "bridge_job_skill",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 566.549785176353,
+            "y": -50
+          },
+          "nodeIndex": "dim_company",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 919.88241885282594,
+            "y": 1146.1376053403264
+          },
+          "nodeIndex": "dim_date",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 565.86094591563813,
+            "y": 508.56963043284009
+          },
+          "nodeIndex": "dim_job",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568.02096478896783,
+            "y": 205.86379519621551
+          },
+          "nodeIndex": "dim_location",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 903.13961443561413,
+            "y": 551.2072101601243
+          },
+          "nodeIndex": "dim_role",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 937.41922947869148
+          },
+          "nodeIndex": "dim_skill",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1212.6826241883211,
+            "y": 948.3083203707107
+          },
+          "nodeIndex": "dim_source",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 198.18603155236406,
+            "y": 191.52421374378036
+          },
+          "nodeIndex": "fact_job_flag",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 829.64660303899359,
+            "y": 785.325476175691
+          },
+          "nodeIndex": "fact_job_posting",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 859.49121058974617,
+            "y": 155.84853700827489
+          },
+          "nodeIndex": "fact_job_quality",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 198.17569078306337,
+            "y": 521.524505583283
+          },
+          "nodeIndex": "fact_repost_event",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

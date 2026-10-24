@@ -1,0 +1,265 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Reset Entry expectations",
+  "name": "reset_entry",
+  "options": {
+    "suppressActiveSection": true,
+    "suppressDisplay": true
+  },
+  "explorationState": {
+    "version": "1.0",
+    "activeSection": "entry",
+    "sections": {
+      "entry": {
+        "visualContainers": {
+          "entry_brand": {
+            "singleVisual": {}
+          },
+          "entry_brand_sub": {
+            "singleVisual": {}
+          },
+          "entry_title": {
+            "singleVisual": {}
+          },
+          "entry_period": {
+            "singleVisual": {}
+          },
+          "entry_nav_overview": {
+            "singleVisual": {}
+          },
+          "entry_nav_pay": {
+            "singleVisual": {}
+          },
+          "entry_nav_entry": {
+            "singleVisual": {}
+          },
+          "entry_nav_repeats": {
+            "singleVisual": {}
+          },
+          "entry_nav_detail": {
+            "singleVisual": {}
+          },
+          "entry_nav_method": {
+            "singleVisual": {}
+          },
+          "entry_reset": {
+            "singleVisual": {}
+          },
+          "entry_scope": {
+            "singleVisual": {}
+          },
+          "entry_footer": {
+            "singleVisual": {}
+          },
+          "entry_role": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "entry_seniority": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "entry_employment": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "entry_date": {
+            "singleVisual": {
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "selfFilterEnabled": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "entry_Entry_Level_Jobs": {
+            "singleVisual": {}
+          },
+          "entry_Entry_Jobs_Requiring_2__Years": {
+            "singleVisual": {}
+          },
+          "entry_Entry_2__Years__": {
+            "singleVisual": {}
+          },
+          "entry_Jobs_with_Entry_Review_Flags": {
+            "singleVisual": {}
+          },
+          "entry_role_entry": {
+            "singleVisual": {}
+          },
+          "entry_entry_note": {
+            "singleVisual": {}
+          },
+          "entry_entry_rows": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "entry_title",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "f",
+                        "Entity": "fact_job_posting",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "f"
+                                  }
+                                },
+                                "Property": "seniority_title"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'entry'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_job_posting"
+                        }
+                      },
+                      "Property": "seniority_title"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "two_years",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "f",
+                        "Entity": "fact_job_posting",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 2,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "f"
+                                  }
+                                },
+                                "Property": "experience_min_years"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "2L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_job_posting"
+                        }
+                      },
+                      "Property": "experience_min_years"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {}
+          }
+        }
+      }
+    }
+  }
+}

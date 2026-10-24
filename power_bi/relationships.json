@@ -1,0 +1,16 @@
+{
+  "model_type": "Star Schema",
+  "relationships": [
+    {"from_table": "dim_company", "from_column": "company_key", "to_table": "dim_job", "to_column": "company_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_role", "from_column": "role_key", "to_table": "dim_job", "to_column": "role_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_location", "from_column": "location_key", "to_table": "fact_job_posting", "to_column": "location_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_source", "from_column": "source_key", "to_table": "fact_job_posting", "to_column": "source_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_date", "from_column": "date_key", "to_table": "fact_job_posting", "to_column": "published_date_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_job", "from_column": "job_key", "to_table": "fact_job_posting", "to_column": "job_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_job", "from_column": "job_key", "to_table": "fact_job_quality", "to_column": "job_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_job", "from_column": "job_key", "to_table": "fact_job_flag", "to_column": "job_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_job", "from_column": "job_key", "to_table": "bridge_job_skill", "to_column": "job_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_job", "from_column": "job_key", "to_table": "fact_repost_event", "to_column": "job_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true},
+    {"from_table": "dim_skill", "from_column": "skill_key", "to_table": "bridge_job_skill", "to_column": "skill_key", "cardinality": "OneToMany", "cross_filtering": "Single", "is_active": true}
+  ]
+}

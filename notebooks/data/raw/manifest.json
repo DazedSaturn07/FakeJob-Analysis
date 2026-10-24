@@ -1,0 +1,13 @@
+{
+  "source_name": "LinkedIn Job Postings (2023–2024)",
+  "source_url": "https://www.kaggle.com/datasets/arshkon/linkedin-job-postings",
+  "filename": "historical_linkedin_124k/postings.csv",
+  "rows": 123849,
+  "columns": 31,
+  "bytes": 516843769,
+  "sha256": "de33f27c8d1b226014e0cede003404e9b0acb66db718671fda9b3e3538eca6ea",
+  "listed_time_min_utc": "2024-03-24T21:50:14Z",
+  "listed_time_max_utc": "2024-04-20T00:26:56Z",
+  "verified_on": "2026-10-16",
+  "licence": "Check the original publisher terms before redistribution."
+}
